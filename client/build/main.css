@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #535353;
+  font-family: sans-serif;
+}
+
+.PageLayout {
+  max-width: 1024px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px 5px #0000003b;
+}
+
+.Head {
+  height: 80px;
+  background: #f5f5f5;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+
+.Head-place {
+  margin: 0 5px;
+}
+
+.Head h1 {
+  margin: 0;
+  padding: 20px 0 10px;
+}
+
+.Item {
+  display: flex;
+  flex-direction: column;
+  transition: background-color 1s;
+  padding-left: 10px;
+  padding: 10px 10px;
+}
+
+
+.Item-task {
+  display: flex;
+  display: grid;
+  grid-template-columns:5fr 1fr 1fr;
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.Item-description{
+  font-size: 15px;
+  text-align: start;
+  padding: 5px 5px 5px 5px;
+}
+
+.Item-description span:first-child{
+  display: block;
+  font-size: 18px;
+  text-decoration: underline;
+  width: 100%;
+  padding: 5px 0px;
+  font-weight: 700;
+}
+
+.Item-status{
+
+}
+.Item-actions {
+  padding: 20px 20px 20px 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px
+}
+
+.Item-actions button {
+  cursor: pointer;
+ background: none;
+  border: none;
+
+}
+
+.Select {
+  padding: 3px 2px 2px;
+  border: 1px dashed #ccc;
+  background: #f5f5f5;
+}
+
+
+.List {
+
+}
+
+.List-item {
+  border-bottom: 1px dashed #ccc;
+}
+
+.List-item:first-child {
+  border-top: 1px dashed #ccc;
+}
+
+.Header{
+  display: flex;
+  display: grid;
+  grid-template-columns:4fr 1fr 1fr;
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.Header div{
+  padding: 10px 10px;
+  border: 1px dashed #ccc;
+ font-size: 12px;
+}
+.Controls {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.Controls button{
+  background: none;
+ border: none;
+ cursor: pointer;
+}
+
+.Spinner {
+  opacity: 0.5;
+}
+
+body:has(.ModalLayout) {
+  overflow: hidden;
+}
+
+.ModalLayout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  padding: 10px;
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalLayout-frame {
+  position: relative;
+  /* background: #ffffff; */
+  background: #e6e3df;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 5px 10px rgb(0 0 0 / 5%);
+  min-width: 600px;
+  width: min(90%, 660px);
+}
+
+.ModalLayout-head {
+  height: 80px;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px 0 20px;
+}
+
+.ModalLayout-close {
+  align-self: center;
+}
+
+.ModalLayout-title {
+  margin: 0;
+  padding: 20px 0 10px;
+}
+
+.ModalLayout-content {
+   display: flex; 
+  flex-direction: column;
+  align-items: center;
+  min-height: 100px;
+  padding: 50px 50px;
+}
+
+.TaskForm {
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+
+.TaskForm button{
+  cursor: pointer;
+  height: 30px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  background: white;
+}
+.InputField{
+    width: 100%;
+    font-size: 16px;
+}
+
+.InputField input{
+    margin-top:4px;
+    padding-left: 5px;
+    width: 100%;
+   font-size: 12px;
+   height: 30px;
+   border: 1px dashed #ccc;
+}
+
+.InputField label{
+   font-size: 16px;
+   font-weight: 700;
+
+}
+
+.InputField-error{
+    font-size: 12px;
+    color: red;
+ 
+ }
+
+
+.TextAriaField{
+    width: 100%;
+    font-size: 16px;
+}
+
+.TextAriaField textarea{
+   margin-top: 2px;
+   padding-left: 5px;
+   width: 100%;
+   font-size: 12px;
+   height: 60px;
+   border: 1px dashed #ccc;
+}
+
+.TextAriaField label{
+   font-size: 16px;
+   font-weight: 700;
+
+}
+
+.TextAriaField-error{
+    font-size: 12px;
+    color: red;
+
+ }
+
+
+.SelectField{
+    width: 100%;
+    font-size: 16px;
+  
+}
+
+.SelectField select{
+    margin-top: 2px;
+    padding-left: 5px;
+    width: 100%;
+    font-size: 12px;
+    height: 30px;
+    border: 1px dashed #ccc;
+    cursor: pointer;
+}
+
+.SelectField label{
+   font-size: 16px;
+   font-weight: 700;
+
+}
+
+
+ 
+
+.SelectField-error{
+    font-size: 12px;
+    color: red;
+ 
+ }
+
+
