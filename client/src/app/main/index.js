@@ -24,7 +24,7 @@ function Main() {
   useEffect(() => {
     dispatch(tasksActions.load());
   }, []);
-  console.log(select.data);
+
   const callbacks = {
     // Редактирвоание задачи
     editTask: useCallback((id) => {

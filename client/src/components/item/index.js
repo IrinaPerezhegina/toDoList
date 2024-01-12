@@ -1,7 +1,6 @@
 import { memo } from "react";
 import PropTypes from "prop-types";
 import { cn as bem } from "@bem-react/classname";
-import { AiTwotoneDelete } from "react-icons/ai";
 import { MdDeleteForever } from "react-icons/md";
 import { MdModeEdit } from "react-icons/md";
 import "./style.css";
@@ -37,10 +36,14 @@ function Item(props) {
   );
 }
 
-Item.propTypes = {};
+Item.propTypes = {
+  onDelete: PropTypes.func.isRequired,
+  onEdit: PropTypes.func.isRequired,
+};
 
 Item.defaultProps = {
-  onAdd: () => {},
+  onDelete: () => {},
+  onEdit: () => {},
 };
 
 export default memo(Item);

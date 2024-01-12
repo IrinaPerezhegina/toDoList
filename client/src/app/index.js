@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Main from "./main";
-import { useSelector as useSelectorRedux } from "react-redux";
+import { useSelector } from "react-redux";
 import Task from "./task/index";
 
 /**
@@ -8,7 +8,7 @@ import Task from "./task/index";
  * @returns {React.ReactElement}
  */
 function App() {
-  const activeModal = useSelectorRedux((state) => state.modals.name);
+  const activeModal = useSelector((state) => state.modals.name);
   return (
     <>
       <Routes>

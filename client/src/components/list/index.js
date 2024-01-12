@@ -27,4 +27,8 @@ List.propTypes = {
   editTask: PropTypes.func.isRequired,
 };
 
+List.defaultProps = {
+  editTask: () => {},
+};
+
 export default memo(List);
