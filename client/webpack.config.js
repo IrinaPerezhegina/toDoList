@@ -59,7 +59,7 @@ if (process.env.NODE_ENV === "development") {
     historyApiFallback: true,
     proxy: {
       "/api": {
-        target: "http://localhost:8080",
+        target: "https://to-do-list-sand-seven.vercel.app/",
         secure: false,
         changeOrigin: true,
       },
