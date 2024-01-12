@@ -1,0 +1,17 @@
+.TaskForm {
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+
+.TaskForm button{
+  cursor: pointer;
+  height: 30px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  background: white;
+}

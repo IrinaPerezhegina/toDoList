@@ -1,0 +1,50 @@
+.Item {
+  display: flex;
+  flex-direction: column;
+  transition: background-color 1s;
+  padding-left: 10px;
+  padding: 10px 10px;
+}
+
+
+.Item-task {
+  display: flex;
+  display: grid;
+  grid-template-columns:5fr 1fr 1fr;
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.Item-description{
+  font-size: 15px;
+  text-align: start;
+  padding: 5px 5px 5px 5px;
+}
+
+.Item-description span:first-child{
+  display: block;
+  font-size: 18px;
+  text-decoration: underline;
+  width: 100%;
+  padding: 5px 0px;
+  font-weight: 700;
+}
+
+.Item-status{
+
+}
+.Item-actions {
+  padding: 20px 20px 20px 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px
+}
+
+.Item-actions button {
+  cursor: pointer;
+ background: none;
+  border: none;
+
+}

@@ -1,0 +1,31 @@
+.SelectField{
+    width: 100%;
+    font-size: 16px;
+  
+}
+
+.SelectField select{
+    margin-top: 2px;
+    padding-left: 5px;
+    width: 100%;
+    font-size: 12px;
+    height: 30px;
+    border: 1px dashed #ccc;
+    cursor: pointer;
+}
+
+.SelectField label{
+   font-size: 16px;
+   font-weight: 700;
+
+}
+
+
+ 
+
+.SelectField-error{
+    font-size: 12px;
+    color: red;
+ 
+ }
+

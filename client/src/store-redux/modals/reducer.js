@@ -1,0 +1,19 @@
+// Начальное состояние
+const initialState = {
+  name: "",
+  id: "",
+};
+
+// Обработчик действий
+function reducer(state = initialState, action) {
+  switch (action.type) {
+    case "modal/open":
+      return { ...state, name: action.payload.name, id: action.payload.id };
+    case "modal/close":
+      return { ...state, name: null };
+    default:
+      return state;
+  }
+}
+
+export default reducer;

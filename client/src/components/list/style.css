@@ -1,0 +1,26 @@
+.List {
+
+}
+
+.List-item {
+  border-bottom: 1px dashed #ccc;
+}
+
+.List-item:first-child {
+  border-top: 1px dashed #ccc;
+}
+
+.Header{
+  display: flex;
+  display: grid;
+  grid-template-columns:4fr 1fr 1fr;
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.Header div{
+  padding: 10px 10px;
+  border: 1px dashed #ccc;
+ font-size: 12px;
+}
