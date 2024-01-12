@@ -5,7 +5,7 @@ const isProduction = process.env.NODE_ENV === "production";
  */
 const config = {
   api: {
-    baseUrl: "api/",
+    baseUrl: "https://to-do-list-sand-seven.vercel.app/api/",
   },
 };
 
