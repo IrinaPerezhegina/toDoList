@@ -51,20 +51,19 @@ let config = {
   ],
 };
 
-if (process.env.NODE_ENV === "development") {
-  config.devtool = "inline-source-map";
-  config.devServer = {
-    static: path.join(__dirname, "build"),
-    port: 8010,
-    historyApiFallback: true,
-    proxy: {
-      "/api": {
-        target: "https://to-do-list-sand-seven.vercel.app/",
-        secure: false,
-        changeOrigin: true,
-      },
+// if (process.env.NODE_ENV === "development") {
+config.devtool = "inline-source-map";
+config.devServer = {
+  static: path.join(__dirname, "build"),
+  port: 8010,
+  historyApiFallback: true,
+  proxy: {
+    "/api": {
+      target: "https://to-do-list-sand-seven.vercel.app/",
+      secure: false,
+      changeOrigin: true,
     },
-  };
-}
+  },
+};
 
 module.exports = config;
